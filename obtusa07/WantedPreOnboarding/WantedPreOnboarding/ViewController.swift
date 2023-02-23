@@ -8,10 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var imageViewFive: UIImageView!
+    @IBOutlet weak var imageViewFour: UIImageView!
+    @IBOutlet weak var imageViewThree: UIImageView!
+    @IBOutlet weak var imageViewTwo: UIImageView!
+    @IBOutlet weak var imageViewOne: UIImageView!
+    @IBOutlet weak var buttonFive: UIButton!
+    @IBOutlet weak var buttonFour: UIButton!
+    @IBOutlet weak var buttonThree: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonAll: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // 버튼 기능 정의 각 버튼이 하나의 operation 작동하도록
+        
     }
 
 
