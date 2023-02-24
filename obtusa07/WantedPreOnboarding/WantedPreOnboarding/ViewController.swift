@@ -24,9 +24,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 버튼 기능 정의 각 버튼이 하나의 operation 작동하도록
-        
+        setupUI()
     }
-
-
+    
+    private func setupUI() {
+    }
 }
 

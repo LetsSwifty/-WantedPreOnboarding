@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B14433929A85F0E00F8EEA5 /* WPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14433829A85F0E00F8EEA5 /* WPService.swift */; };
+		7B14433B29A8601300F8EEA5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14433A29A8601300F8EEA5 /* ViewModel.swift */; };
 		7B633AC529A75D1800C4D7E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B633AC429A75D1800C4D7E3 /* AppDelegate.swift */; };
 		7B633AC729A75D1800C4D7E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B633AC629A75D1800C4D7E3 /* SceneDelegate.swift */; };
 		7B633AC929A75D1800C4D7E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B633AC829A75D1800C4D7E3 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B14433829A85F0E00F8EEA5 /* WPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPService.swift; sourceTree = "<group>"; };
+		7B14433A29A8601300F8EEA5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7B633AC129A75D1800C4D7E3 /* WantedPreOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantedPreOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B633AC429A75D1800C4D7E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B633AC629A75D1800C4D7E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B14433729A85EF000F8EEA5 /* APIClients */ = {
+			isa = PBXGroup;
+			children = (
+				7B14433829A85F0E00F8EEA5 /* WPService.swift */,
+			);
+			path = APIClients;
+			sourceTree = "<group>";
+		};
 		7B633AB829A75D1800C4D7E3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,7 @@
 		7B633AC329A75D1800C4D7E3 /* WantedPreOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				7B14433729A85EF000F8EEA5 /* APIClients */,
 				7B633AC429A75D1800C4D7E3 /* AppDelegate.swift */,
 				7B633AC629A75D1800C4D7E3 /* SceneDelegate.swift */,
 				7B633AC829A75D1800C4D7E3 /* ViewController.swift */,
@@ -63,6 +76,7 @@
 				7B633ACD29A75D1900C4D7E3 /* Assets.xcassets */,
 				7B633ACF29A75D1900C4D7E3 /* LaunchScreen.storyboard */,
 				7B633AD229A75D1900C4D7E3 /* Info.plist */,
+				7B14433A29A8601300F8EEA5 /* ViewModel.swift */,
 			);
 			path = WantedPreOnboarding;
 			sourceTree = "<group>";
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B14433B29A8601300F8EEA5 /* ViewModel.swift in Sources */,
 				7B633AC929A75D1800C4D7E3 /* ViewController.swift in Sources */,
+				7B14433929A85F0E00F8EEA5 /* WPService.swift in Sources */,
 				7B633AC529A75D1800C4D7E3 /* AppDelegate.swift in Sources */,
 				7B633AC729A75D1800C4D7E3 /* SceneDelegate.swift in Sources */,
 			);
