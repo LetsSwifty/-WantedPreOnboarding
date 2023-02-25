@@ -19,6 +19,8 @@
 		3626782D299F4C0900AA084D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626782C299F4C0900AA084D /* NetworkService.swift */; };
 		EF71723E29AA30660064CEA9 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71723D29AA30660064CEA9 /* ImageListCell.swift */; };
 		EF71724029AA44200064CEA9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71723F29AA44200064CEA9 /* APIKey.swift */; };
+		EF71724129AA4EB20064CEA9 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626782A299F487E00AA084D /* NetworkUtil.swift */; };
+		EF71724429AA4F5C0064CEA9 /* ImageLoadDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71724329AA4F5C0064CEA9 /* ImageLoadDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +54,12 @@
 		3626780F299DDE5800AA084D /* WantedPreOnBorading-pre_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WantedPreOnBorading-pre_ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36267813299DDE5800AA084D /* WantedPreOnBorading_pre_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedPreOnBorading_pre_ProjectUITests.swift; sourceTree = "<group>"; };
 		36267815299DDE5800AA084D /* WantedPreOnBorading_pre_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedPreOnBorading_pre_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3626782A299F487E00AA084D /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		3626782A299F487E00AA084D /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		3626782B299F487E00AA084D /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		3626782C299F4C0900AA084D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EF71723D29AA30660064CEA9 /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
 		EF71723F29AA44200064CEA9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		EF71724329AA4F5C0064CEA9 /* ImageLoadDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 			children = (
 				36267822299F434700AA084D /* Application */,
 				36267824299F450900AA084D /* Presentation */,
+				EF71724229AA4F4A0064CEA9 /* Data */,
 				36267826299F462500AA084D /* Infrastructure */,
 				36267829299F485E00AA084D /* Common */,
 				36267823299F43AD00AA084D /* Resources */,
@@ -191,9 +195,17 @@
 			isa = PBXGroup;
 			children = (
 				3626782B299F487E00AA084D /* Cancelable.swift */,
-				3626782A299F487E00AA084D /* ConnectionError.swift */,
+				3626782A299F487E00AA084D /* NetworkUtil.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		EF71724229AA4F4A0064CEA9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF71724329AA4F5C0064CEA9 /* ImageLoadDTO.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,11 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				362677F7299DDE5600AA084D /* ImageLoadViewController.swift in Sources */,
+				EF71724129AA4EB20064CEA9 /* NetworkUtil.swift in Sources */,
 				EF71723E29AA30660064CEA9 /* ImageListCell.swift in Sources */,
 				362677F3299DDE5600AA084D /* AppDelegate.swift in Sources */,
 				3626782D299F4C0900AA084D /* NetworkService.swift in Sources */,
 				EF71724029AA44200064CEA9 /* APIKey.swift in Sources */,
 				362677F5299DDE5600AA084D /* SceneDelegate.swift in Sources */,
+				EF71724429AA4F5C0064CEA9 /* ImageLoadDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

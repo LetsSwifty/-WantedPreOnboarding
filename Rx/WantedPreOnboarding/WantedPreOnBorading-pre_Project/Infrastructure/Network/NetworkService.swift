@@ -7,36 +7,6 @@
 
 import Foundation
 
-enum HTTPMethodType: String {
-    case get     = "GET"
-    case post    = "POST"
-    case put     = "PUT"
-    case delete  = "DELETE"
-}
-
-enum APIError: Error {
-    case defaultError
-    case abnormalStatusCode
-    case noResponseData
-    case failUseCodable
-    case responseDataError
-    
-    var localizedDescription: String {
-        switch self {
-        case .defaultError:
-            return "일반적인 통신 에러"
-        case .abnormalStatusCode:
-            return "StatusCode 에러"
-        case .noResponseData:
-            return "응답값 없음"
-        case .failUseCodable:
-            return "Codable 변환 오류"
-        case .responseDataError:
-            return "응답 데이터 오류"
-        }
-    }
-}
-
 enum NetworkService {
     static let limit: Int = 30
     static let baseURL: String = "https://api.unsplash.com/"
@@ -101,11 +71,36 @@ enum NetworkService {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
             print("task, data = \(data), response = \(response), error = \(error)")
-            
-            
+            do {
+                let jsonResult = try JSONDecoder().decode(T.self, from: data)
+                print("jsonResult = \(jsonResult)")
+                debugPrint(response)
+                completionHandler(.success(jsonResult))
+            }
+            catch {
+                print(error)
+            }
         }
         
         task.resume()
+    }
+    
+    func useCodable<T: Decodable>(structType: T.Type, object:Any)-> T? {
+        do {
+            // JSON으로 변환
+            let json = try JSONSerialization.data(withJSONObject: object, options: .prettyPrinted)
+            // Codable 이용하여 객체 얻음
+            let object = try JSONDecoder().decode(structType, from: json)
+            
+            return object
+            
+        } catch(let e){
+            print(e)
+            return nil
+        }
     }
 }
