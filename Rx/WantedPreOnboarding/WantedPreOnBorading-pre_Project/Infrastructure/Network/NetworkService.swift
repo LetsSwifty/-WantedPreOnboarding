@@ -10,7 +10,6 @@ import Foundation
 enum NetworkService {
     static let limit: Int = 30
     static let baseURL: String = "https://api.unsplash.com/"
-    //typealias CompletionHandler = (Result<Data?, NetworkError>) -> Void
     
     case getImage(query: String, offset: Int, limit: Int)
     
@@ -64,12 +63,12 @@ enum NetworkService {
             urlString += qParam
         }
         
-        
-        let method = self.method
         let param = self.bodyParameter
         guard let url = URL(string: urlString) else { return }
+        
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
+        
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 return
