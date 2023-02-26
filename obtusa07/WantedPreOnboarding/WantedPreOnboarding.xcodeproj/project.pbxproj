@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B14433929A85F0E00F8EEA5 /* WPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14433829A85F0E00F8EEA5 /* WPService.swift */; };
 		7B14433B29A8601300F8EEA5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14433A29A8601300F8EEA5 /* ViewModel.swift */; };
 		7B633AC529A75D1800C4D7E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B633AC429A75D1800C4D7E3 /* AppDelegate.swift */; };
 		7B633AC729A75D1800C4D7E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B633AC629A75D1800C4D7E3 /* SceneDelegate.swift */; };
@@ -15,10 +14,11 @@
 		7B633ACC29A75D1800C4D7E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B633ACA29A75D1800C4D7E3 /* Main.storyboard */; };
 		7B633ACE29A75D1900C4D7E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B633ACD29A75D1900C4D7E3 /* Assets.xcassets */; };
 		7B633AD129A75D1900C4D7E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B633ACF29A75D1900C4D7E3 /* LaunchScreen.storyboard */; };
+		7BB8E1A429A89C0B00F75BB8 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8E1A329A89C0B00F75BB8 /* AsyncOperation.swift */; };
+		7BB8E1A629A8C31000F75BB8 /* WPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB8E1A529A8C31000F75BB8 /* WPModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B14433829A85F0E00F8EEA5 /* WPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPService.swift; sourceTree = "<group>"; };
 		7B14433A29A8601300F8EEA5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7B633AC129A75D1800C4D7E3 /* WantedPreOnboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantedPreOnboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B633AC429A75D1800C4D7E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		7B633ACD29A75D1900C4D7E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B633AD029A75D1900C4D7E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B633AD229A75D1900C4D7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB8E1A329A89C0B00F75BB8 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		7BB8E1A529A8C31000F75BB8 /* WPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 		7B14433729A85EF000F8EEA5 /* APIClients */ = {
 			isa = PBXGroup;
 			children = (
-				7B14433829A85F0E00F8EEA5 /* WPService.swift */,
+				7BB8E1A529A8C31000F75BB8 /* WPModel.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -74,6 +76,7 @@
 				7B633AC829A75D1800C4D7E3 /* ViewController.swift */,
 				7B633ACA29A75D1800C4D7E3 /* Main.storyboard */,
 				7B633AD229A75D1900C4D7E3 /* Info.plist */,
+				7BB8E1A329A89C0B00F75BB8 /* AsyncOperation.swift */,
 			);
 			path = WantedPreOnboarding;
 			sourceTree = "<group>";
@@ -160,10 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB8E1A629A8C31000F75BB8 /* WPModel.swift in Sources */,
 				7B14433B29A8601300F8EEA5 /* ViewModel.swift in Sources */,
 				7B633AC929A75D1800C4D7E3 /* ViewController.swift in Sources */,
-				7B14433929A85F0E00F8EEA5 /* WPService.swift in Sources */,
 				7B633AC529A75D1800C4D7E3 /* AppDelegate.swift in Sources */,
+				7BB8E1A429A89C0B00F75BB8 /* AsyncOperation.swift in Sources */,
 				7B633AC729A75D1800C4D7E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
